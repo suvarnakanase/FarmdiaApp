@@ -1,0 +1,118 @@
+*{
+    font-family: 'Montserrat-regular', sans-serif;
+}
+
+.heading-section{
+    min-height: 14.6875rem;
+    background-color: var(--ion-color-success);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4caf50+0,2b9b49+100 */
+    background: rgb(76,175,80); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(76,175,80,1) 0%, rgba(43,155,73,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(76,175,80,1) 0%,rgba(43,155,73,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(76,175,80,1) 0%,rgba(43,155,73,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4caf50', endColorstr='#2b9b49',GradientType=0 ); /* IE6-9 */
+    color:#fff;
+    padding:3.125rem 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    h3{
+        font-size: 1.125rem;
+        margin: 0px;
+    }
+    ion-thumbnail{
+        margin: 0 0 0.875rem;
+        width: auto;
+        height: auto;
+    }
+}
+
+.content-section{
+    padding: 2rem 1.5625rem;
+    position: relative;
+    &::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 1.0625rem 1rem 1.0625rem;
+        border-color: transparent transparent #ffffff transparent;
+        position: absolute;
+        top: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .info{
+        p{
+            margin: 0  0 1rem;
+            font-family: 'Montserrat-medium', sans-serif;
+            color: #605f5f;
+            line-height: 1.6rem;
+            font-size: 0.9375rem;
+        }
+    }
+}
+
+ion-button{
+    
+    height: 3.125rem;
+    margin: 0;
+    &.btn-block{
+        width: 100%;
+    }
+    &::part(native){
+        font-size: 0.9375rem;
+        margin: 0;
+        box-shadow: none;
+        text-transform: none;
+        background-color: #008040;
+        --background-color: var(--ion-button-background) !important;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+
+.form{
+    margin-bottom: 0.3rem;
+    ion-item{
+        margin-bottom: 1.625rem;
+        border: none;
+        // border-bottom: 1px solid #d1d0d0;
+        font-family: 'Montserrat-medium', sans-serif;
+        font-size: 0.9375rem;
+        // font-weight: 600;
+        --padding-start: 0;
+        &:host{
+            --padding-start: 0;
+        }
+        ion-input{
+            input{
+                height: 2.625rem;
+            }
+        }
+    }
+}
+
+.link{
+    color: #3f51b5;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+.back-btn-wrap {
+    .link{
+        ion-icon{
+            position: relative;
+            top: 0.1rem;
+            +ion-icon{
+                margin-left: -0.5rem;
+                
+            }
+        }
+    }
+    &::before{
+        display: none;
+    }
+}

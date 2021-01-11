@@ -1,0 +1,179 @@
+*{
+    font-family: 'Montserrat-regular', sans-serif;
+}
+
+.page{
+    min-height: 100%;
+    background-color: var(--ion-color-success);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4caf50+0,2b9b49+100 */
+    background: rgb(76,175,80); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(76,175,80,1) 0%, rgba(43,155,73,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(76,175,80,1) 0%,rgba(43,155,73,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(76,175,80,1) 0%,rgba(43,155,73,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4caf50', endColorstr='#2b9b49',GradientType=0 ); /* IE6-9 */
+}
+
+.skip-login{
+    padding: 3.125rem 1.375rem;
+    .skip{
+        width: 4.6875rem;
+        text-align: center;
+        background-color: #259747;
+        color: #ffffff;
+        font-size: 0.875rem;
+        line-height: 2.25rem;
+        font-family: 'Montserrat-light', sans-serif;
+        border-radius: 1rem;
+        text-decoration: none;
+        display: inline-block;
+    }
+}
+
+.authentication_sec{
+    width: 100%;
+    padding: 3.125rem 1.5625rem;
+    .logo_text{
+        margin-bottom: 3.125rem;
+        color: #ffffff;
+        p{
+            font-size: 0.875rem;
+            margin: 0;
+        }
+    }
+    .app_name{
+        font-size: 3.125rem;
+        font-family: 'Montserrat-bold', sans-serif;
+        margin: 0;
+    }
+    form{
+        ion-item{
+            margin-bottom: 0.875rem;
+            border-radius: 0.4rem;
+            font-family: 'Montserrat-medium', sans-serif;
+            font-size: 0.9375rem;
+            font-weight: 600;
+        }
+        .btn-row{
+            margin-bottom: 0.75rem;
+            ion-button{
+                width: 100%;
+                height: 3.125rem;
+                margin: 0;
+            }
+            ion-button.btn-signin::part(native){
+                width: 100%;
+                height: 3.125rem;
+                font-size: 0.9375rem;
+                margin: 0;
+                box-shadow: none;
+                text-transform: none;
+                background-color: #008040;
+                --background-color: var(--ion-button-background) !important;
+            }
+        }
+        .forgot_pw{
+            a{
+                font-size: 0.75rem;
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+    .other_way{
+        ion-grid{
+            padding: 0;
+            ion-row{
+                margin: 0 -5px;
+            }
+        }
+        .or{
+            font-size: 0.5625rem;
+            font-family: 'Montserrat-light', sans-serif;
+            color: #ffffff;
+            margin-bottom: 0.4rem;
+            b{
+                font-weight: 300;
+            }
+            p{
+                position: relative;
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    width: 45%;
+                    height: 1px;
+                    background: #ffffff;
+                    position: absolute;
+                    left: 0;
+                    top: 48%;
+                }
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    width: 45%;
+                    height: 1px;
+                    background: #ffffff;
+                    position: absolute;
+                    right: 0;
+                    top: 48%;
+                }
+            }
+        }
+        .other-link{
+            width: 100%;
+            display: block;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            line-height: 3.125rem;
+            color: #242424;
+            background-color: #fff;
+            border-radius: 0.3rem;
+            text-decoration: none;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .email-link{
+            background-image: url(../../assets/images/icon-email.svg);
+            background-repeat: no-repeat;
+            background-size: 1.4rem;
+            background-position: left 1.25rem center;
+        }
+        .phone-link{
+            background-image: url(../../assets/images/icon-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: 0.9rem;
+            background-position: left 1.25rem center;
+        }
+        .facebook-link{
+            padding-left: 2.5rem;
+            background-image: url(../../assets/images/facebook.svg);
+            background-repeat: no-repeat;
+            background-size: 1.8rem;
+            background-position: left 1.15rem center;
+        }
+        .google-link{
+            padding-left: 2.5rem;
+            background-image: url(../../assets/images/google.svg);
+            background-repeat: no-repeat;
+            background-size: 1.8rem;
+            background-position: left 1.15rem center;
+        }
+        .no-account{
+            text-align: center;
+            color: #ffffff;
+            p{
+                font-size: 0.9375rem;
+                font-family: 'Montserrat-light', sans-serif;
+            }
+            span{
+                opacity: 0.64;
+                display: inline-block;
+                margin-right: 0.4rem;
+            }
+            a{
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        }
+    }
+}

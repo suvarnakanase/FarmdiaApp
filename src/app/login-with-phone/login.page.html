@@ -1,0 +1,54 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <section class="page">
+    <div class="skip-login ion-text-end">
+      <a href="#" class="skip">Skip</a>
+    </div>
+    <article class="authentication_sec">
+      <div class="logo_text ion-text-center">
+        <h1 class="app_name">Farmdia</h1>
+        <p>Lorem Ipsum is simply dummy text of the</p>
+      </div>
+      <form class="login_form_wrapper">
+        <ion-item>
+          <ion-input type="text" name="phone-number" placeholder="Phone Number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" name="password" placeholder="Password"></ion-input>
+        </ion-item>
+        <div class="btn-row">
+          <ion-button type="submit" class="btn-signin">Sign In</ion-button>
+        </div>
+        <div class="ion-text-end forgot_pw">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </form>
+      <div class="other_way">
+        <ion-grid>
+          <ion-row class="ion-text-center">
+            <ion-col class="or"><p><b>OR</b></p></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><a href="#" class="other-link email-link" [routerLink]="['/login-with-email']">Continue with Email</a></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><a href="#" class="other-link facebook-link">Facebook</a></ion-col>
+            <ion-col><a href="#" class="other-link google-link">Google</a></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="no-account">
+              <p><span>Don't have an account?</span> <a href="#">Register</a></p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </article>
+  </section>
+</ion-content>

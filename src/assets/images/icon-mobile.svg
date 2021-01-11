@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 24" width="15" height="24">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-49 -600L363 -600L363 247L-49 247Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="Login with Mobile" clip-path="url(#cp1)">
+		<path id="Path 15" fill-rule="evenodd" class="shp0" d="M14.67 19.37L14.67 20.26C14.67 21.77 13.44 23 11.92 23L3.39 23C1.88 23 0.65 21.77 0.65 20.26L0.65 19.37L14.67 19.37ZM6.93 21C6.93 21.37 7.22 21.67 7.59 21.67C7.96 21.67 8.25 21.37 8.25 21L8.25 20.98C8.25 20.62 7.96 20.32 7.59 20.32C7.22 20.32 6.93 20.62 6.93 20.98L6.93 21ZM0.65 18.05L0.65 3.26C0.65 1.75 1.88 0.52 3.39 0.52L11.92 0.52C13.44 0.52 14.67 1.75 14.67 3.26L14.67 18.05L0.65 18.05Z" />
+	</g>
+</svg>
